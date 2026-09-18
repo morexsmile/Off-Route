@@ -1,1 +1,842 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OFF ROUTE - Aventuras para gente que se sale del mapa.">
+  <meta name="author" content="OFF ROUTE">
+  <meta name="theme-color" content="#171717">
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="js/index.js" defer></script>
+
+  <title>OFF ROUTE | Donde termina el mapa</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="navbar container">
+      <a class="logo" href="#inicio" aria-label="OFF ROUTE, inicio">
+        <span class="logo-text">OFF ROUTE</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li>
+            <a href="#explorar">Explorar</a>
+          </li>
+
+          <li>
+            <a href="#paises">Países</a>
+          </li>
+
+          <li>
+            <a href="#aventuras">Aventuras</a>
+          </li>
+
+          <li>
+            <a href="#como-funciona">Cómo funciona</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="button button-primary" href="#explorar">
+        Encuentra tu aventura
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" hidden>
+      <nav aria-label="Navegación móvil">
+        <ul class="mobile-nav-list">
+          <li>
+            <a href="#explorar">Explorar</a>
+          </li>
+
+          <li>
+            <a href="#paises">Países</a>
+          </li>
+
+          <li>
+            <a href="#aventuras">Aventuras</a>
+          </li>
+
+          <li>
+            <a href="#como-funciona">Cómo funciona</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-image-wrapper">
+        <img
+          class="hero-image"
+          src="assets/hero-adventure.jpg"
+          alt="Viajero junto a una camper bajo las auroras boreales">
+      </div>
+
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <p class="eyebrow">
+          Edición 01 / Rutas del norte
+        </p>
+
+        <p class="hero-label">
+          Agencia de aventuras no convencionales
+        </p>
+
+        <h1>
+          Donde termina<br>
+          el mapa, empieza<br>
+          la aventura.
+        </h1>
+
+        <p class="hero-description">
+          No organizamos vacaciones. Encontramos historias
+          que todavía no sabes que vas a contar.
+        </p>
+
+        <a class="button button-light" href="#explorar">
+          Explorar aventuras
+        </a>
+      </div>
+    </section>
+
+    <!-- EXPLORADOR -->
+    <section class="explorer-section" id="explorar">
+      <div class="container">
+        <div class="section-intro">
+          <p class="section-number">
+            01 / 05
+          </p>
+
+          <h2>
+            ¿Qué estás<br>
+            buscando?
+          </h2>
+
+          <p>
+            Elige cuánto quieres alejarte de la ruta marcada.
+          </p>
+        </div>
+
+        <div class="explorer">
+          <div class="filter-group">
+            <p class="filter-label">
+              Destino
+            </p>
+            
+            <div class="filter-options">
+              <button class="filter-button active" type="button">
+                Todos
+              </button>
+
+              <button class="filter-button" type="button">
+                Europa
+              </button>
+
+              <button class="filter-button" type="button">
+                América
+              </button>
+
+              <button class="filter-button" type="button">
+                Asia
+              </button>
+
+              <button class="filter-button" type="button">
+                África
+              </button>
+
+              <button class="filter-button" type="button">
+                Oceanía
+              </button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <p class="filter-label">
+              Tipo de aventura
+            </p>
+
+            <div class="filter-options">
+              <button class="filter-button active" type="button">
+                Todos
+              </button>
+
+              <button class="filter-button" type="button">
+                Naturaleza
+              </button>
+
+              <button class="filter-button" type="button">
+                Adrenalina
+              </button>
+
+              <button class="filter-button" type="button">
+                Cultura
+              </button>
+
+              <button class="filter-button" type="button">
+                Road trip
+              </button>
+
+              <button class="filter-button" type="button">
+                Agua
+              </button>
+
+              <button class="filter-button" type="button">
+                Montaña
+              </button>
+
+              <button class="filter-button" type="button">
+                Noche
+              </button>
+
+              <button class="filter-button" type="button">
+                Experiencias únicas
+              </button>
+            </div>
+          </div>
+
+
+          <div class="filter-group">
+            <p class="filter-label">
+              Nivel máximo
+            </p>
+
+            <div class="adventure-levels">
+              <button class="level-button active" type="button">
+                01
+              </button>
+
+              <button class="level-button" type="button">
+                02
+              </button>
+
+              <button class="level-button" type="button">
+                03
+              </button>
+
+              <button class="level-button" type="button">
+                04
+              </button>
+
+              <button class="level-button" type="button">
+                05
+              </button>
+            </div>
+          </div>
+
+          <div class="results-header">
+            <p>
+              <strong>6</strong> aventuras encontradas
+            </p>
+
+            <p>
+              Actualizado / 18.09.2026
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- AVENTURAS -->
+    <section class="adventures-section" id="aventuras">
+      <div class="container">
+        <div class="section-intro">
+          <p class="section-number">
+            02 / 05
+          </p>
+          
+          <h2>
+            No son viajes.<br>
+            Son historias.
+          </h2>
+
+          <p>
+            Seis formas de volver siendo otra persona.
+          </p>
+        </div>
+
+        <div class="adventures-grid">
+
+          <!-- AVENTURA 01 -->
+          <article class="adventure-card">
+            <div class="adventure-image-wrapper">
+              <img
+                class="adventure-image"
+                src="assets/iceland.jpg"
+                alt="Camper bajo las auroras boreales en Islandia">
+
+              <span class="adventure-level">
+                Nivel 3/5
+              </span>
+
+              <span class="adventure-coordinates">
+                64.9631° N · 19.0208° W
+              </span>
+            </div>
+
+            <div class="adventure-content">
+              <p class="adventure-country">
+                Islandia 01
+              </p>
+
+              <h3>
+                Perseguir auroras en una camper
+              </h3>
+
+              <p>
+                Carreteras volcánicas, aguas termales y noches
+                bajo un cielo imposible.
+              </p>
+
+              <div class="adventure-meta">
+                <span>8 días</span>
+                <span>desde 1.890 €</span>
+              </div>
+
+              <a href="#" class="adventure-link">
+                Descubrir →
+              </a>
+            </div>
+          </article>
+
+          <!-- AVENTURA 02 -->
+          <article class="adventure-card">
+            <div class="adventure-image-wrapper">
+
+              <img
+                class="adventure-image"
+                src="assets/japan.jpg"
+                alt="Templo tradicional entre árboles en Japón">
+
+              <span class="adventure-level">
+                Nivel 2/5
+              </span>
+
+              <span class="adventure-coordinates">
+                34.2125° N · 135.5864° E
+              </span>
+            </div>
+
+            <div class="adventure-content">
+              <p class="adventure-country">
+                Japón 02
+              </p>
+
+              <h3>
+                Dormir en un templo perdido
+              </h3>
+
+              <p>
+                Una peregrinación entre cedros milenarios
+                hasta el Japón que no sale en las guías.
+              </p>
+
+              <div class="adventure-meta">
+                <span>6 días</span>
+                <span>desde 1.640 €</span>
+              </div>
+
+              <a href="#" class="adventure-link">
+                Descubrir →
+              </a>
+            </div>
+          </article>
+
+          <!-- AVENTURA 03 -->
+          <article class="adventure-card">
+            <div class="adventure-image-wrapper">
+              <img
+                class="adventure-image"
+                src="assets/norway.jpg"
+                alt="Kayak entre fiordos de Noruega">
+
+              <span class="adventure-level">
+                Nivel 4/5
+              </span>
+
+              <span class="adventure-coordinates">
+                62.1015° N · 7.0941° E
+              </span>
+            </div>
+
+            <div class="adventure-content">
+              <p class="adventure-country">
+                Noruega 03
+              </p>
+
+              <h3>
+                Kayak entre fiordos
+              </h3>
+
+              <p>
+                Remar entre paredes de roca, cascadas y un
+                silencio que se siente físico.
+              </p>
+
+              <div class="adventure-meta">
+                <span>5 días</span>
+                <span>desde 1.420 €</span>
+              </div>
+
+              <a href="#" class="adventure-link">
+                Descubrir →
+              </a>
+            </div>
+          </article>
+
+          <!-- AVENTURA 04 -->
+          <article class="adventure-card">
+            <div class="adventure-image-wrapper">
+              <img
+                class="adventure-image"
+                src="assets/morocco.jpg"
+                alt="Campamento bajo las estrellas en el desierto del Sahara">
+
+              <span class="adventure-level">
+                Nivel 3/5
+              </span>
+
+              <span class="adventure-coordinates">
+                31.0802° N · 4.0134° W
+              </span>
+            </div>
+
+            <div class="adventure-content">
+              <p class="adventure-country">
+                Marruecos 04
+              </p>
+
+              <h3>
+                Dormir bajo las estrellas en el Sahara
+              </h3>
+
+              <p>
+                Cruzar el Erg Chebbi y acampar donde la
+                contaminación lumínica no existe.
+              </p>
+
+              <div class="adventure-meta">
+                <span>4 días</span>
+                <span>desde 790 €</span>
+              </div>
+
+              <a href="#" class="adventure-link">
+                Descubrir →
+              </a>
+            </div>
+          </article>
+
+          <!-- AVENTURA 05 -->
+          <article class="adventure-card">
+            <div class="adventure-image-wrapper">
+              <img
+                class="adventure-image"
+                src="assets/nepal.jpg"
+                alt="Senderista cruzando un puente en el Himalaya">
+
+              <span class="adventure-level">
+                Nivel 5/5
+              </span>
+
+              <span class="adventure-coordinates">
+                27.9881° N · 86.9250° E
+              </span>
+            </div>
+
+            <div class="adventure-content">
+              <p class="adventure-country">
+                Nepal 05
+              </p>
+
+              <h3>
+                Caminar hacia el techo del mundo
+              </h3>
+
+              <p>
+                Senderos suspendidos, aldeas sherpa y el
+                Himalaya abriéndose paso entre las nubes.
+              </p>
+
+              <div class="adventure-meta">
+                <span>14 días</span>
+                <span>desde 2.350 €</span>
+              </div>
+
+              <a href="#" class="adventure-link">
+                Descubrir →
+              </a>
+            </div>
+          </article>
+
+          <!-- AVENTURA 06 -->
+          <article class="adventure-card">
+            <div class="adventure-image-wrapper">
+              <img
+                class="adventure-image"
+                src="assets/mexico.jpg"
+                alt="Persona nadando en un cenote de México">
+
+              <span class="adventure-level">
+                Nivel 2/5
+              </span>
+
+              <span class="adventure-coordinates">
+                20.6843° N · 88.5678° W
+              </span>
+            </div>
+
+            <div class="adventure-content">
+              <p class="adventure-country">
+                México 06
+              </p>
+
+              <h3>
+                Nadar en un cenote secreto
+              </h3>
+
+              <p>
+                Selva, roca caliza y agua transparente en una
+                cavidad conocida por muy pocos.
+              </p>
+
+              <div class="adventure-meta">
+                <span>3 días</span>
+                <span>desde 620 €</span>
+              </div>
+
+              <a href="#" class="adventure-link">
+                Descubrir →
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAÍSES -->
+    <section class="countries-section" id="paises">
+      <div class="container">
+        <div class="section-intro">
+          <p class="section-number">
+            03 / 05
+          </p>
+
+          <h2>
+            Un país.<br>
+            Una aventura.
+          </h2>
+
+          <p>
+            Abre el atlas. El resto lo decidimos sobre la marcha.
+          </p>
+        </div>
+
+        <div class="countries-grid">
+          <a href="#" class="country-card">
+            <img
+              src="assets/iceland.jpg"
+              alt="Paisaje de Islandia">
+
+            <div class="country-content">
+              <span>64.9631° N · 19.0208° W</span>
+              <strong>Islandia</strong>
+              <span>17 aventuras</span>
+            </div>
+          </a>
+
+          <a href="#" class="country-card">
+            <img
+              src="assets/japan.jpg"
+              alt="Paisaje de Japón">
+
+            <div class="country-content">
+              <span>34.2125° N · 135.5864° E</span>
+              <strong>Japón</strong>
+              <span>20 aventuras</span>
+            </div>
+          </a>
+
+          <a href="#" class="country-card">
+
+            <img
+              src="assets/norway.jpg"
+              alt="Paisaje de Noruega">
+
+            <div class="country-content">
+              <span>62.1015° N · 7.0941° E</span>
+              <strong>Noruega</strong>
+              <span>23 aventuras</span>
+            </div>
+          </a>
+
+          <a href="#" class="country-card">
+
+            <img
+              src="assets/morocco.jpg"
+              alt="Paisaje de Marruecos">
+
+            <div class="country-content">
+              <span>31.0802° N · 4.0134° W</span>
+              <strong>Marruecos</strong>
+              <span>26 aventuras</span>
+            </div>
+          </a>
+
+          <a href="#" class="country-card">
+            <img
+              src="assets/nepal.jpg"
+              alt="Paisaje de Nepal">
+
+            <div class="country-content">
+              <span>27.9881° N · 86.9250° E</span>
+              <strong>Nepal</strong>
+              <span>29 aventuras</span>
+            </div>
+          </a>
+
+          <a href="#" class="country-card">
+
+            <img
+              src="assets/mexico.jpg"
+              alt="Paisaje de México">
+
+            <div class="country-content">
+              <span>20.6843° N · 88.5678° W</span>
+              <strong>México</strong>
+              <span>32 aventuras</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NIVEL DE AVENTURA -->
+    <section class="levels-section">
+      <div class="container">
+        <div class="section-intro">
+          <p class="section-number">
+            04 / 05
+          </p>
+
+          <h2>
+            ¿Cuánto te quieres<br>
+            complicar la vida?
+          </h2>
+
+          <p>
+            Una escala científicamente imprecisa.
+            Brutalmente honesta.
+          </p>
+        </div>
+
+        <div class="levels-list">
+          <button class="level-card" type="button">
+            <span>01</span>
+            <strong>Tranquilo</strong>
+            <small>Para empezar.</small>
+          </button>
+
+          <button class="level-card" type="button">
+            <span>02</span>
+            <strong>Curioso</strong>
+            <small>Un poco fuera de ruta.</small>
+          </button>
+
+          <button class="level-card" type="button">
+            <span>03</span>
+            <strong>Valiente</strong>
+            <small>Ya no es turismo.</small>
+          </button>
+
+          <button class="level-card" type="button">
+            <span>04</span>
+            <strong>Salvaje</strong>
+            <small>Necesitarás una buena historia.</small>
+          </button>
+
+          <button class="level-card" type="button">
+            <span>05</span>
+            <strong>Insano</strong>
+            <small>Definitivamente no es para todos.</small>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CÓMO FUNCIONA -->
+    <section class="how-section" id="como-funciona">
+      <div class="container">
+        <div class="section-intro">
+          <p class="section-number">
+            05 / Cómo funciona
+          </p>
+
+          <h2>
+            Nosotros encontramos el lugar.<br>
+            Tú decides hasta dónde quieres llegar.
+          </h2>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <span class="step-number">
+              01
+            </span>
+
+            <h3>
+              Elige un país
+            </h3>
+          </div>
+
+          <div class="step">
+            <span class="step-number">
+              02
+            </span>
+
+            <h3>
+              Encuentra tu aventura
+            </h3>
+          </div>
+
+          <div class="step">
+            <span class="step-number">
+              03
+            </span>
+
+            <h3>
+              Haz la maleta
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="final-cta">
+      <div class="final-cta-image-wrapper">
+        <img
+          class="final-cta-image"
+          src="assets/final-adventure.jpg"
+          alt="Expedicionista cruzando un puente en el Himalaya">
+      </div>
+
+      <div class="final-cta-overlay"></div>
+      <div class="final-cta-content container">
+        <p class="eyebrow">
+          Próxima salida / cuando tú decidas
+        </p>
+
+        <h2>
+          Deja de soñar<br>
+          con el viaje.
+        </h2>
+
+        <p>
+          Empieza a buscarlo.
+        </p>
+
+        <a class="button button-light" href="#explorar">
+          Encuentra tu aventura
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a class="footer-logo" href="#inicio">
+            OFF ROUTE
+          </a>
+
+          <p>
+            Viajes para gente que se sale del mapa.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div>
+            <p class="footer-title">
+              Explora
+            </p>
+
+            <a href="#explorar">
+              Explorar aventuras
+            </a>
+
+            <a href="#paises">
+              Países
+            </a>
+
+            <a href="#como-funciona">
+              Cómo funciona
+            </a>
+          </div>
+
+          <div>
+            <p class="footer-title">
+              Contacto
+            </p>
+
+            <a href="mailto:hola@offroute.travel">
+              hola@offroute.travel
+            </a>
+          </div>
+
+          <div>
+            <p class="footer-title">
+              Síguenos
+            </p>
+
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              Instagram ↗
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              TikTok ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © 2026 OFF ROUTE. Todos los derechos reservados.
+        </p>
+
+        <p>
+          Hecho para perderse / Málaga · 36.7213° N
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
