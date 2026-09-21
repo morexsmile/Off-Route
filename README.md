@@ -35,8 +35,8 @@ Paleta de colores
 - Arena | #D8C7A5
 
 Tipografías
-Space Grotesk - títulos y elementos destacados.
-DM Sans - textos y contenido general.
+- Space Grotesk - títulos y elementos destacados.
+- DM Sans - textos y contenido general.
 
 Tecnologías
 - HTML5
