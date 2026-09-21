@@ -28,11 +28,11 @@ La identidad visual está inspirada en:
 
 
 Paleta de colores
-Negro carbón | #171717
-Blanco roto | #F4F1E8
-Verde bosque | #234536
-Naranja aventura | #E8662B
-Arena | #D8C7A5
+- Negro carbón | #171717
+- Blanco roto | #F4F1E8
+- Verde bosque | #234536
+- Naranja aventura | #E8662B
+- Arena | #D8C7A5
 
 Tipografías
 Space Grotesk - títulos y elementos destacados.
