@@ -41,7 +41,6 @@ Tipografías
 Tecnologías
 - HTML5
 - CSS3
+- JavaScript
 - Google Fonts
 - GitHub Pages
-
-Actualmente no necesita JavaScript para funcionar como landing page estática.
